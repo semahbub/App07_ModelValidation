@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Model Validation</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <button class="btn btn-primary abc">Primary</button>
+        <button class="btn btn-success abc">Success</button>
+        <button class="btn btn-warning abc">Warning</button>
+        <button class="btn btn-danger abc">Danger</button>
+        <button class="btn btn-secondary abc">Secondary</button>
+        <button class="btn btn-info abc">Info</button>
+    </div>
+</div>
+
+
+@section Scripts {
+
+    <script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $('.abc').mousemove(function () {
+            let bg = $(this).css('background-color');
+            $('body').css('background-color', bg);            
+        });
+    });
+    </script>
+
+}
